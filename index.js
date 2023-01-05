@@ -1,4 +1,10 @@
 const container = document.getElementById("container");
+const btn = document.querySelectorAll("button");
+btn.addEventListener('click', () =>{
+  let rows = prompt("Enter number of rows.");
+  let cols = prompt("Enter number of columns.");
+//  makeRows(rows, cols);
+})
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
