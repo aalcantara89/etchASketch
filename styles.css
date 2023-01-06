@@ -4,7 +4,11 @@
 }
 
 #container {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  width: 960px;
   grid-gap: 1em;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
@@ -14,8 +18,9 @@
   padding: 1em;
   border: 1px solid #ddd;
   text-align: center;
+  width: calc(100% / 25); /* keeps width of each grid item the same */
 }
-.grid-item:hover{
+.grid-item:hover{ /* hover effect of grid item */
   background-color: grey;
 }
 #newGrid{
